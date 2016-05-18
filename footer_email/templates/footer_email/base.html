@@ -27,13 +27,13 @@
             <tbody>
               <tr>
                 <td class="a">
-                  <table class="adr" width="100%" cellspacing="0" border="0" cellpadding="0" style="font-family:Helvetica,Arial,sans-serif;font-size:16px;color:#494e41;">
+                  <table class="adr" width="100%" cellspacing="0" border="0" cellpadding="0">
                     <tr>
                       <td style="height:10px;display:block">&nbsp;</td>
                     </tr>
                     <tr>
-                      <td class="tel" style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41;">
-                          <span class="type">Direct: </span><a href="tel:%%PhoneNumber%%" class="value" style="text-decoration:none;outline:none"><font color="#494e41" face="Helvetica,sans-serif" style="font-size:12pt;">%%PhoneNumber%%</font></a>
+                      <td class="tel">
+                          <span class="type" style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41;">Direct: </span><a href="tel:%%PhoneNumber%%" class="value" style="text-decoration:none;outline:none"><font color="#494e41" face="Helvetica,sans-serif" style="font-size:12pt;">%%PhoneNumber%%</font></a>
                       </td>
                     </tr>
                     <tr>
@@ -49,14 +49,23 @@
                     <tr><td style="height:15px;display:block">&nbsp;</td></tr>
                     <tr><td><span class="org" style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41">MoneyPark AG</span></td></tr>
                     <tr><td><span class="street-address" style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41">%%Street%%</span></td></tr>
-                    <tr><td><span class="postal-code" style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41">%%ZipCode%%</span> <span class="locality">%%City%%</span></td></tr>
+                    <tr><td style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41">
+                        <span class="postal-code">%%ZipCode%%</span>
+                        <span class="locality">%%City%%</span></td>
+                    </tr>
                     <tr><td><span class="country-name" style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41">Switzerland</span></td></tr>
                     <tr><td style="height:20px;display:block">&nbsp;</td></tr>
-                    <tr><td><img src="{{ STATIC_URL }}i/len.png" style="background:transparent;" width="221" height="58" border="0" nosend="1" alt="MoneyPark"></td></tr>
+                    <tr>
+                        <td>
+                            <a href="https://moneypark.ch/en/" target="_blank" style="font-family:Helvetica,sans-serif;font-size:22px;color:#789e56;display:block;line-height:50px;">
+                                <img src="{{ STATIC_URL }}i/len.png" style="background:transparent;text-align:center;" width="221" height="58" border="0" nosend="1" alt="MoneyPark">
+                            </a>
+                        </td>
+                    </tr>
                   </table>
                 </td>
                 <td style="text-align:right" class="a">
-                  <table align="right" class="b" width="275" cellspacing="20" border="0" cellpadding="0" style="background-color:#799c4b;text-align:center">
+                  <table align="right" class="b" width="275" cellspacing="20" border="0" cellpadding="0" style="background-color:#789e56;text-align:center">
                     <tbody>
                       <tr>
                         <td>
@@ -65,15 +74,15 @@
                       </tr>
                       <tr>
                         <td>
-                            <a href="https://moneypark.ch/en/recommend-moneypark/" target="_blank" style="font-family:Helvetica,sans-serif;font-size:14px;color:#fff;text-align:center;display:block;line-height:20px;">
-                                <img src="{{ STATIC_URL }}i/ren.png" width="210" height="60" border="0" nosend="1" alt="Recommend MoneyPark">
+                            <a href="https://moneypark.ch/en/recommend-moneypark/" target="_blank" style="font-family:Helvetica,sans-serif;font-size:15px;color:#fff;display:block;line-height:50px;">
+                                <img src="{{ STATIC_URL }}i/ren.png" width="210" height="60" border="0" nosend="1" alt="Recommend MoneyPark" style="text-align:center;">
                             </a>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                            <a href="https://moneypark.ch/en/recommend-moneypark/" target="_blank" style="font-family:Helvetica,sans-serif;font-size:14px;color:#fff;text-align:center;display:block;line-height:28px;">
-                                <img src="{{ STATIC_URL }}i/renun.png" width="210" height="60" border="0" nosend="1" alt="and receive a voucher worth CHF 200">
+                            <a href="https://moneypark.ch/en/recommend-moneypark/" target="_blank" style="font-family:Helvetica,sans-serif;font-size:14px;color:#fff;display:block;line-height:28px;">
+                                <img src="{{ STATIC_URL }}i/renun.png" width="210" height="60" border="0" nosend="1" alt="and receive a voucher worth CHF 200" style="text-align:center;">
                             </a>
                         </td>
                       </tr>
@@ -186,7 +195,7 @@
                   </table>
                 </td>
                 <td style="text-align:right" class="a">
-                  <table width="275" cellspacing="20" border="0" cellpadding="0" style="font-family:Helvetica,Arial,sans-serif;font-size:16px;color:#fff;background-color:#799c4b;text-align:center" align="right" class="b">
+                  <table width="275" cellspacing="20" border="0" cellpadding="0" style="background-color:#789e56;text-align:center" align="right" class="b">
                     <tbody>
                       <tr>
                         <td>
@@ -318,7 +327,7 @@
                   </table>
                 </td>
                 <td style="text-align:right" class="a">
-                  <table width="275" cellspacing="20" border="0" cellpadding="0" style="font-family:Helvetica,Arial,sans-serif;font-size:16px;color:#fff;background-color:#799c4b;text-align:center" align="right" class="b">
+                  <table width="275" cellspacing="20" border="0" cellpadding="0" style="font-family:Helvetica,sans-serif;font-size:16px;color:#fff;background-color:#789e56;text-align:center" align="right" class="b">
                     <tbody>
                       <tr>
                         <td>
@@ -450,7 +459,7 @@
                   </table>
                 </td>
                 <td style="text-align:right" class="a">
-                  <table width="275" cellspacing="20" border="0" cellpadding="0" style="font-family:Helvetica,Arial,sans-serif;font-size:16px;color:#fff;background-color:#799c4b;text-align:center" align="right" class="b">
+                  <table width="275" cellspacing="20" border="0" cellpadding="0" style="font-family:Helvetica,sans-serif;font-size:16px;color:#fff;background-color:#789e56;text-align:center" align="right" class="b">
                     <tbody>
                       <tr>
                         <td>
@@ -458,15 +467,15 @@
                         </td>
                       </tr>
                       <tr>
-                        <td style="font-family:Helvetica,Arial,sans-serif;font-size:22px;color:#fff">
-                            <a href="https://moneypark.ch/it/raccomandare-moneypark/" target="_blank" style="font-family:Helvetica,Arial,sans-serif;font-size:22px;color:#fff !important;text-decoration:none !important;">
+                        <td>
+                            <a href="https://moneypark.ch/it/raccomandare-moneypark/" target="_blank" style="font-family:Helvetica,sans-serif;font-size:15px;color:#fff;text-decoration:none;">
                                 <img src="{{ STATIC_URL }}i/rit.png" alt="Raccomandare MoneyPark" width="210" height="60" nosend="1">
                             </a>
                         </td>
                       </tr>
                       <tr>
                         <td style="font-family:Helvetica,Arial,sans-serif;font-size:16px;color:#fff">
-                            <a href="https://moneypark.ch/it/raccomandare-moneypark/" target="_blank" style="font-family:Helvetica,Arial,sans-serif;font-size:16px;color:#fff !important;text-decoration:none !important;">
+                            <a href="https://moneypark.ch/it/raccomandare-moneypark/" target="_blank" style="font-family:Helvetica,sans-serif;font-size:14px;color:#fff;text-decoration:none;">
                                 <img src="{{ STATIC_URL }}i/ritun.png" alt="e ricevere un buono di CHF 200" width="210" height="60" nosend="1">
                             </a>
                         </td>

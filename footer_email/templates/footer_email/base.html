@@ -19,8 +19,13 @@
           <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tr><td><img width="1" height="1" src="{% static 'i/blank.gif' %}" border="0" nosend="1" alt=""></td></tr>
             <tr><td style="height:10px;display:block">&nbsp;</td></tr>
-            <tr><td style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41;"><span class="given-name">%%FirstName%%</span> <span class="family-name">%%LastName%%</span></td></tr>
-            <tr><td style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41;"><span class="title">%%Title%%</span></td></tr>
+            <tr>
+                <td style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41;">
+                    <span class="given-name">%%FirstName%%</span>
+                    <span class="family-name">%%LastName%%</span>
+                </td>
+            </tr>
+            <tr><td><span class="title" style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41;">%%Title%%</span></td></tr>
             <tr><td style="height:10px;display:block">&nbsp;</td></tr>
           </table>
           <table width="100%" cellspacing="0" cellpadding="0" class="a" style="border-top:1px solid #eaeaea;border-bottom:1px solid #eaeaea;">
@@ -28,37 +33,40 @@
               <tr>
                 <td class="a">
                   <table class="adr" width="100%" cellspacing="0" border="0" cellpadding="0">
-                    <tr>
-                      <td style="height:10px;display:block">&nbsp;</td>
-                    </tr>
+                    <tr><td style="height:10px;display:block">&nbsp;</td></tr>
                     <tr>
                       <td class="tel">
-                          <span class="type" style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41;">Direct: </span><a href="tel:%%PhoneNumber%%" class="value" style="text-decoration:none;outline:none"><font color="#494e41" face="Helvetica,sans-serif" style="font-size:12pt;">%%PhoneNumber%%</font></a>
+                          <span class="type" style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41;">Direct: </span>
+                          <a href="tel:%%PhoneNumber%%" class="value" style="text-decoration:none;outline:none"><font color="#494e41" face="Helvetica,sans-serif" style="font-size:12pt;">%%PhoneNumber%%</font></a>
                       </td>
                     </tr>
                     <tr>
                       <td class="tel">
-                          <span class="type" style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41">Company: </span><a href="tel:%%MobileNumber%%" class="value" style="text-decoration:none;outline:none;"><font color="#494e41" face="Helvetica,sans-serif" style="font-size:12pt;">%%MobileNumber%%</font></a>
+                          <span class="type" style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41">Company: </span>
+                          <a href="tel:%%MobileNumber%%" class="value" style="text-decoration:none;outline:none;"><font color="#494e41" face="Helvetica,sans-serif" style="font-size:12pt;">%%MobileNumber%%</font></a>
                       </td>
                     </tr>
                     <tr>
                       <td class="email">
-                          <span class="type" style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41">Email: </span><a href="mailto:%%Email%%" class="value" style="text-decoration:none;outline:none"><font color="#494e41" face="Helvetica,sans-serif" style="font-size:12pt;">%%Email%%</font></a>
+                          <span class="type" style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41">Email: </span>
+                          <a href="mailto:%%Email%%" class="value" style="text-decoration:none;outline:none"><font color="#494e41" face="Helvetica,sans-serif" style="font-size:12pt;">%%Email%%</font></a>
                       </td>
                     </tr>
                     <tr><td style="height:15px;display:block">&nbsp;</td></tr>
                     <tr><td><span class="org" style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41">MoneyPark AG</span></td></tr>
                     <tr><td><span class="street-address" style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41">%%Street%%</span></td></tr>
-                    <tr><td style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41">
-                        <span class="postal-code">%%ZipCode%%</span>
-                        <span class="locality">%%City%%</span></td>
+                    <tr>
+                        <td style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41">
+                            <span class="postal-code">%%ZipCode%%</span>
+                            <span class="locality">%%City%%</span>
+                        </td>
                     </tr>
                     <tr><td><span class="country-name" style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41">Switzerland</span></td></tr>
                     <tr><td style="height:20px;display:block">&nbsp;</td></tr>
                     <tr>
                         <td>
                             <a href="https://moneypark.ch/en/" target="_blank" style="font-family:Helvetica,sans-serif;font-size:22px;color:#789e56;display:block;line-height:50px;">
-                                <img src="{{ STATIC_URL }}i/len.png" style="background:transparent;text-align:center;" width="221" height="58" border="0" nosend="1" alt="MoneyPark">
+                                <img src="{{ STATIC_URL }}i/len.png" style="background:transparent;text-align:center;" width="221" height="58" border="0" nosend="1" alt="www.moneypark.ch">
                             </a>
                         </td>
                     </tr>
@@ -67,14 +75,10 @@
                 <td style="text-align:right" class="a">
                   <table align="right" class="b" width="275" cellspacing="20" border="0" cellpadding="0" style="background-color:#789e56;text-align:center">
                     <tbody>
+                      <tr><td><img src="{{ STATIC_URL }}i/speaker.png" width="83" height="45" border="0" nosend="1" alt=""></td></tr>
                       <tr>
                         <td>
-                          <img src="{{ STATIC_URL }}i/speaker.png" width="83" height="45" border="0" nosend="1" alt="">
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                            <a href="https://moneypark.ch/en/recommend-moneypark/" target="_blank" style="font-family:Helvetica,sans-serif;font-size:15px;color:#fff;display:block;line-height:50px;">
+                            <a href="https://moneypark.ch/en/recommend-moneypark/" target="_blank" style="font-family:Helvetica,sans-serif;font-size:16px;color:#fff;display:block;line-height:50px;">
                                 <img src="{{ STATIC_URL }}i/ren.png" width="210" height="60" border="0" nosend="1" alt="Recommend MoneyPark" style="text-align:center;">
                             </a>
                         </td>
@@ -143,82 +147,80 @@
           <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tr><td><img width="1" height="1" src="{% static 'i/blank.gif' %}" nosend="1" alt=""></td></tr>
             <tr><td style="height:10px;display:block">&nbsp;</td></tr>
-            <tr><td style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41;">%%FirstName%% %%LastName%%</td></tr>
-            <tr><td style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41;">%%Title%%</td></tr>
+            <tr>
+                <td style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41;">
+                    <span class="given-name">%%FirstName%%</span>
+                    <span class="family-name">%%LastName%%</span>
+                </td>
+            </tr>
+            <tr><td><span class="title" style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41;">%%Title%%</span></td></tr>
             <tr><td style="height:10px;display:block">&nbsp;</td></tr>
           </table>
           <table width="100%" cellspacing="0" cellpadding="0" style="border-top:1px solid #eaeaea;border-bottom:1px solid #eaeaea;" class="a">
             <tbody class="a">
               <tr class="a">
                 <td class="a">
-                  <table width="100%" cellspacing="0" border="0" cellpadding="0">
+                  <table class="adr" width="100%" cellspacing="0" border="0" cellpadding="0">
                     <tr><td style="height:10px;display:block">&nbsp;</td></tr>
                     <tr>
-                      <td>
+                      <td class="tel">
                           <span class="type" style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41">Direkt:</span>
-                          <a href="tel:%%PhoneNumber%%" style="text-decoration:none;outline:none"><font color="#494e41" face="Helvetica,Arial,sans-serif" style="font-size:12pt;">%%PhoneNumber%%</font></a>
+                          <a class="value" href="tel:%%PhoneNumber%%" style="text-decoration:none;outline:none"><font color="#494e41" face="Helvetica,sans-serif" style="font-size:12pt;">%%PhoneNumber%%</font></a>
                       </td>
                     </tr>
                     <tr>
-                      <td style="font-family:Helvetica,Arial,sans-serif;font-size:16px;color:#494e41">
-                        Telefon:
-                        <a href="tel:%%MobileNumber%%" style="text-decoration:none;outline:none"><font color="#494e41" face="Helvetica,Arial,sans-serif" style="font-size:12pt;">%%MobileNumber%%</font></a>
+                      <td class="tel">
+                          <span class="type" style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41">Telefon: </span>
+                          <a class="value" href="tel:%%MobileNumber%%" style="text-decoration:none;outline:none"><font color="#494e41" face="Helvetica,sans-serif" style="font-size:12pt;">%%MobileNumber%%</font></a>
                       </td>
                     </tr>
                     <tr>
-                      <td style="font-family:Helvetica,Arial,sans-serif;font-size:16px;color:#494e41">
-                        Email:
-                        <a href="mailto:%%Email%%" style="text-decoration:none;outline:none"><font color="#494e41" face="Helvetica,Arial,sans-serif" style="font-size:12pt;">%%Email%%</font></a>
+                      <td class="email">
+                          <span class="type" style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41">Email:</span>
+                          <a class="value" href="mailto:%%Email%%" style="text-decoration:none;outline:none"><font color="#494e41" face="Helvetica,sans-serif" style="font-size:12pt;">%%Email%%</font></a>
                       </td>
                     </tr>
+                    <tr><td style="height:15px;display:block">&nbsp;</td></tr>
+                    <tr><td><span class="org" style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41">MoneyPark AG</span></td></tr>
+                    <tr><td><span class="street-address" style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41">%%Street%%</span></td></tr>
                     <tr>
-                      <td style="height:15px;display:block">&nbsp;</td>
+                      <td style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41">
+                          <span class="postal-code">%%ZipCode%% </span>
+                          <span class="locality">%%City%%</span>
+                      </td>
                     </tr>
+                    <tr><td><span class="country-name" style="font-family:Helvetica,Arial,sans-serif;font-size:16px;color:#494e41">Switzerland</span></td></tr>
+                    <tr><td style="height:20px;display:block">&nbsp;</td></tr>
                     <tr>
-                      <td style="font-family:Helvetica,Arial,sans-serif;font-size:16px;color:#494e41">MoneyPark AG</td>
-                    </tr>
-                    <tr>
-                      <td style="font-family:Helvetica,Arial,sans-serif;font-size:16px;color:#494e41">%%Street%%</td>
-                    </tr>
-                    <tr>
-                      <td style="font-family:Helvetica,Arial,sans-serif;font-size:16px;color:#494e41">%%ZipCode%% %%City%%</td>
-                    </tr>
-                    <tr>
-                      <td style="font-family:Helvetica,Arial,sans-serif;font-size:16px;color:#494e41">Switzerland</td>
-                    </tr>
-                    <tr>
-                      <td style="height:20px;display:block">&nbsp;</td>
-                    </tr>
-                    <tr>
-                      <td><img src="{{ STATIC_URL }}i/lde.png" width="221" height="59" alt="MoneyPark" nosend="1"></td>
+                        <td>
+                            <a href="https://moneypark.ch/en/" target="_blank" style="font-family:Helvetica,sans-serif;font-size:22px;color:#789e56;display:block;line-height:50px;">
+                                <img src="{{ STATIC_URL }}i/lde.png" style="background:transparent;text-align:center;" width="221" height="59" alt="www.moneypark.ch" nosend="1">
+                            </a>
+                        </td>
                     </tr>
                   </table>
                 </td>
                 <td style="text-align:right" class="a">
                   <table width="275" cellspacing="20" border="0" cellpadding="0" style="background-color:#789e56;text-align:center" align="right" class="b">
                     <tbody>
+                      <tr><td><img src="{{ STATIC_URL }}i/speaker.png" width="83" height="45" nosend="1" alt=""></td></tr>
                       <tr>
                         <td>
-                          <img src="{{ STATIC_URL }}i/speaker.png" width="83" height="45" nosend="1">
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="font-family:Helvetica,Arial,sans-serif;font-size:22px;color:#fff">
-                            <a href="https://moneypark.ch/news-wissen/weiterempfehlen/" target="_blank" style="font-family:Helvetica,Arial,sans-serif;font-size:22px;color:#fff !important;text-decoration:none !important;">
-                                <img src="{{ STATIC_URL }}i/rde.png" alt="MoneyPark weiterempfehlen" width="210" height="60" nosend="1">
-                            </a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="font-family:Helvetica,Arial,sans-serif;font-size:16px;color:#fff">
-                            <a href="https://moneypark.ch/news-wissen/weiterempfehlen/" target="_blank" style="font-family:Helvetica,Arial,sans-serif;font-size:16px;color:#fff !important;text-decoration:none !important;">
-                                <img src="{{ STATIC_URL }}i/rdeun.png" alt="und einen Gutschein im Wert von CHF 200 erhalten" width="210" height="60" nosend="1">
+                            <a href="https://moneypark.ch/news-wissen/weiterempfehlen/" target="_blank" style="font-family:Helvetica,sans-serif;font-size:16px;color:#fff;display:block;line-height:50px;text-align:center;">
+                                <img src="{{ STATIC_URL }}i/rde.png" alt="MoneyPark weiterempfehlen" width="210" height="60" nosend="1" style="text-align:center;background:transparent;">
                             </a>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <table width="100%" cellspacing="0" border="0" cellpadding="0" style="font-family:Helvetica,Arial,sans-serif;font-size:16px;color:#fff">
+                            <a href="https://moneypark.ch/news-wissen/weiterempfehlen/" target="_blank" style="font-family:Helvetica,sans-serif;font-size:14px;color:#fff;display:block;line-height:28px;">
+                                <img src="{{ STATIC_URL }}i/rdeun.png" alt="und einen Gutschein im Wert von CHF 200 erhalten" width="210" height="60" nosend="1" style="text-align:center;background:transparent;">
+                            </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <table width="100%" cellspacing="0" border="0" cellpadding="0">
                             <tr>
                               <td><img src="{{ STATIC_URL }}i/lunch.png" width="54" height="52" nosend="1"></td>
                               <td><img src="{{ STATIC_URL }}i/chair.png" width="54" height="52" nosend="1"></td>

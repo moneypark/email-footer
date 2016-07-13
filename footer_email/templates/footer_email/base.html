@@ -1,6 +1,47 @@
 {% load static from staticfiles %}
 {% load i18n %}
 
+
+<h2 style="font-family:Helvetica,Arial,sans-serif;color:#494e41;text-align:center;font-size:18px;padding:0 0 40px 0;">Internal common footer template</h2>
+<!--Internal Template-->
+<!DOCTYPE html>
+{% spaceless %}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="profile" href="http://microformats.org/profile/hcard">
+</head>
+<body>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="vcard">
+      <tbody>
+          <tr><td><img width="1" height="1" src="{% static 'i/blank.gif' %}" border="0" nosend="1" alt=""></td></tr>
+          <tr><td style="height:10px;display:block">&nbsp;</td></tr>
+          <tr>
+              <td style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41;">
+                  <span class="given-name">%%FirstName%%&nbsp;</span>
+                  <span class="family-name">%%LastName%%</span>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <span class="title" style="font-family:Helvetica,sans-serif;font-size:16px;color:#494e41;">%%Title%%</span>
+              </td>
+          </tr>
+          <tr>
+              <td class="tel">
+                  <a href="tel:%%PhoneNumber%%" class="value" style="text-decoration:none;outline:none">
+                      <font color="#494e41" face="Helvetica,sans-serif" style="font-size:12pt;">%%PhoneNumber%%</font>
+                  </a>
+              </td>
+          </tr>
+          <tr><td style="height:10px;display:block">&nbsp;</td></tr>
+      </tbody>
+  </table>
+</body>
+</html>
+{% endspaceless %}
+<!--end Interanl Template-->
+
 <h2 style="font-family:Helvetica,Arial,sans-serif;color:#494e41;text-align:center;font-size:18px;padding:0 0 40px 0;">English version for footer email template</h2>
 <!--En Template-->
 <!DOCTYPE html>
@@ -9,7 +50,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="profile" href="http://microformats.org/profile/hcard">
-{#    <style>a{text-decoration:none;}@media(max-width:480px){.a{display:block;width:100%;}.b{width:100% !important;}}</style>#}
+    <style>a{text-decoration:none;}@media(max-width:480px){.a{display:block;width:100%;}.b{width:100% !important;}}</style>
 </head>
 <body>
   <table width="100%" border="0" cellspacing="0" cellpadding="0" class="vcard a">

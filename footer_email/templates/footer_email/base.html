@@ -2,7 +2,7 @@
 {% load i18n %}
 
 
-<h2 style="font-family:Helvetica,Arial,sans-serif;color:#494e41;text-align:center;font-size:18px;padding:0 0 40px 0;">Internal common footer template</h2>
+<h2 style="font-family:Arial,sans-serif;color:#494e41;text-align:center;font-size:18px;padding:0 0 40px 0;">Internal common footer template</h2>
 <!--Internal Template-->
 <!DOCTYPE html>
 {% spaceless %}
@@ -10,6 +10,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="profile" href="http://microformats.org/profile/hcard">
+    <style>a{text-decoration:none;}</style>
 </head>
 <body>
   <table width="100%" border="0" cellspacing="0" cellpadding="0" class="vcard">
@@ -17,20 +18,20 @@
           <tr><td><img width="1" height="1" src="{% static 'i/blank.gif' %}" border="0" nosend="1" alt=""></td></tr>
           <tr><td style="height:10px;display:block">&nbsp;</td></tr>
           <tr>
-              <td style="font-family:Arial,sans-serif;font-size:10pt;color:#494e41;">
+              <td style="font-family:Arial,sans-serif;font-size:10pt;color:#494e41;text-decoration:none;">
                   <span class="given-name">%%FirstName%%&nbsp;</span>
                   <span class="family-name">%%LastName%%</span>
               </td>
           </tr>
           <tr>
               <td>
-                  <span class="title" style="font-family:Arial,sans-serif;font-size:10pt;color:#494e41;">%%Title%%</span>
+                  <span class="title" style="font-family:Arial,sans-serif;font-size:10pt;color:#494e41;text-decoration:none;">%%Title%%</span>
               </td>
           </tr>
           <tr>
               <td class="tel">
-                  <a href="tel:%%PhoneNumber%%" class="value" style="text-decoration:none;outline:none">
-                      <font color="#494e41" face="Arial,sans-serif" style="font-size:10pt;">%%PhoneNumber%%</font>
+                  <a href="tel:%%PhoneNumber%%" class="value" style="text-decoration:none;outline:none;">
+                      <font color="#494e41" face="Arial,sans-serif" style="font-size:10pt;text-decoration:none;outline:none;">%%PhoneNumber%%</font>
                   </a>
               </td>
           </tr>
@@ -42,7 +43,7 @@
 {% endspaceless %}
 <!--end Interanl Template-->
 
-<h2 style="font-family:Helvetica,Arial,sans-serif;color:#494e41;text-align:center;font-size:18px;padding:0 0 40px 0;">English version for footer email template</h2>
+<h2 style="font-family:Arial,sans-serif;color:#494e41;text-align:center;font-size:18px;padding:0 0 40px 0;">English version for footer email template</h2>
 <!--En Template-->
 <!DOCTYPE html>
 {% spaceless %}
@@ -78,19 +79,19 @@
                     <tr>
                       <td class="tel">
                           <span class="type" style="font-family:Arial,sans-serif;font-size:10pt;color:#494e41;">Direct:&nbsp;</span>
-                          <a href="tel:%%PhoneNumber%%" class="value" style="text-decoration:none;outline:none"><font color="#494e41" face="Arial,sans-serif" style="font-size:10pt;">%%PhoneNumber%%</font>&nbsp;</a>
+                          <a href="tel:%%PhoneNumber%%" class="value" style="text-decoration:none;outline:none"><font color="#494e41" face="Arial,sans-serif" style="font-size:10pt;text-decoration:none;outline:none;">%%PhoneNumber%%</font>&nbsp;</a>
                       </td>
                     </tr>
                     <tr>
                       <td class="tel">
                           <span class="type" style="font-family:Arial,sans-serif;font-size:10pt;color:#494e41">Company:&nbsp;</span>
-                          <a href="tel:%%MobileNumber%%" class="value" style="text-decoration:none;outline:none;"><font color="#494e41" face="Arial,sans-serif" style="font-size:10pt;">%%MobileNumber%%</font>&nbsp;</a>
+                          <a href="tel:%%MobileNumber%%" class="value" style="text-decoration:none;outline:none;"><font color="#494e41" face="Arial,sans-serif" style="font-size:10pt;text-decoration:none;outline:none;">%%MobileNumber%%</font>&nbsp;</a>
                       </td>
                     </tr>
                     <tr>
                       <td class="email">
                           <span class="type" style="font-family:Arial,sans-serif;font-size:10pt;color:#494e41">Email:&nbsp;</span>
-                          <a href="mailto:%%Email%%" class="value" style="text-decoration:none;outline:none"><font color="#494e41" face="Arial,sans-serif" style="font-size:10pt;">%%Email%%</font>&nbsp;</a>
+                          <a href="mailto:%%Email%%" class="value" style="text-decoration:none;outline:none"><font color="#494e41" face="Arial,sans-serif" style="font-size:10pt;text-decoration:none;outline:none;">%%Email%%</font>&nbsp;</a>
                           <div style="height:10px;display:block">&nbsp;</div>
                       </td>
                     </tr>
@@ -193,20 +194,20 @@
                     <tr><td style="height:10px;display:block">&nbsp;</td></tr>
                     <tr>
                       <td class="tel">
-                          <span class="type" style="font-family:Arial,sans-serif;font-size:10pt;color:#494e41">Direkt:</span>
-                          <a class="value" href="tel:%%PhoneNumber%%" style="text-decoration:none;outline:none"><font color="#494e41" face="Arial,sans-serif" style="font-size:10pt;">%%PhoneNumber%%</font>&nbsp;</a>
+                          <span class="type" style="font-family:Arial,sans-serif;font-size:10pt;color:#494e41;">Direkt:</span>
+                          <a class="value" href="tel:%%PhoneNumber%%" style="text-decoration:none;outline:none"><font color="#494e41" face="Arial,sans-serif" style="font-size:10pt;text-decoration:none;outline:none;">%%PhoneNumber%%</font>&nbsp;</a>
                       </td>
                     </tr>
                     <tr>
                       <td class="tel">
                           <span class="type" style="font-family:Arial,sans-serif;font-size:10pt;color:#494e41">Telefon:&nbsp;</span>
-                          <a class="value" href="tel:%%MobileNumber%%" style="text-decoration:none;outline:none"><font color="#494e41" face="Arial,sans-serif" style="font-size:10pt;">%%MobileNumber%%</font>&nbsp;</a>
+                          <a class="value" href="tel:%%MobileNumber%%" style="text-decoration:none;outline:none"><font color="#494e41" face="Arial,sans-serif" style="font-size:10pt;text-decoration:none;outline:none;">%%MobileNumber%%</font>&nbsp;</a>
                       </td>
                     </tr>
                     <tr>
                       <td class="email">
                           <span class="type" style="font-family:Arial,sans-serif;font-size:10pt;color:#494e41">Email:&nbsp;</span>
-                          <a class="value" href="mailto:%%Email%%" style="text-decoration:none;outline:none"><font color="#494e41" face="Arial,sans-serif" style="font-size:10pt;">%%Email%%</font>&nbsp;</a>
+                          <a class="value" href="mailto:%%Email%%" style="text-decoration:none;outline:none"><font color="#494e41" face="Arial,sans-serif" style="font-size:10pt;text-decoration:none;outline:none;">%%Email%%</font>&nbsp;</a>
                           <div style="height:10px;display:block">&nbsp;</div>
                       </td>
                     </tr>
@@ -310,19 +311,19 @@
                     <tr>
                       <td class="tel">
                           <span class="type" style="font-family:Arial,sans-serif;font-size:10pt;color:#494e41;">Ligne directe:&nbsp;</span>
-                          <a href="tel:%%PhoneNumber%%" class="value" style="text-decoration:none;outline:none"><font color="#494e41" face="Arial,sans-serif" style="font-size:10pt;">%%PhoneNumber%%</font>&nbsp;</a>
+                          <a href="tel:%%PhoneNumber%%" class="value" style="text-decoration:none;outline:none;"><font color="#494e41" face="Arial,sans-serif" style="font-size:10pt;text-decoration:none;outline:none;">%%PhoneNumber%%</font>&nbsp;</a>
                       </td>
                     </tr>
                     <tr>
                       <td class="tel">
                           <span class="type" style="font-family:Arial,sans-serif;font-size:10pt;color:#494e41">Téléphone:&nbsp;</span>
-                          <a href="tel:%%MobileNumber%%" class="value" style="text-decoration:none;outline:none"><font color="#494e41" face="Arial,sans-serif" style="font-size:10pt;">%%MobileNumber%%</font>&nbsp;</a>
+                          <a href="tel:%%MobileNumber%%" class="value" style="text-decoration:none;outline:none"><font color="#494e41" face="Arial,sans-serif" style="font-size:10pt;text-decoration:none;outline:none;">%%MobileNumber%%</font>&nbsp;</a>
                       </td>
                     </tr>
                     <tr>
                       <td class="email">
                           <span class="type" style="font-family:Arial,sans-serif;font-size:10pt;color:#494e41">Email:&nbsp;</span>
-                          <a href="mailto:%%Email%%" class="value" style="text-decoration:none;outline:none"><font color="#494e41" face="Arial,sans-serif" style="font-size:10pt;">%%Email%%</font></a>
+                          <a href="mailto:%%Email%%" class="value" style="text-decoration:none;outline:none"><font color="#494e41" face="Arial,sans-serif" style="font-size:10pt;text-decoration:none;outline:none;">%%Email%%</font></a>
                           <div style="height:10px;display:block">&nbsp;</div>
                       </td>
                     </tr>
@@ -426,19 +427,19 @@
                     <tr>
                         <td class="tel">
                             <span class="type" style="font-family:Arial,sans-serif;font-size:10pt;color:#494e41;">Tel. Diretto:&nbsp;</span>
-                            <a href="tel:%%PhoneNumber%%" class="value" style="text-decoration:none;outline:none"><font color="#494e41" face="Arial,sans-serif" style="font-size:10pt;">%%PhoneNumber%%</font>&nbsp;</a>
+                            <a href="tel:%%PhoneNumber%%" class="value" style="text-decoration:none;outline:none;"><font color="#494e41" face="Arial,sans-serif" style="font-size:10pt;text-decoration:none;outline:none;">%%PhoneNumber%%</font>&nbsp;</a>
                         </td>
                     </tr>
                     <tr>
                         <td class="tel">
-                            <span class="type" style="font-family:Arial,sans-serif;font-size:10pt;color:#494e41">Ufficio:&nbsp;</span>
-                            <a href="tel:%%MobileNumber%%" class="value" style="text-decoration:none;outline:none;"><font color="#494e41" face="Arial,sans-serif" style="font-size:10pt;">%%MobileNumber%%</font>&nbsp;</a>
+                            <span class="type" style="font-family:Arial,sans-serif;font-size:10pt;color:#494e41;">Ufficio:&nbsp;</span>
+                            <a href="tel:%%MobileNumber%%" class="value" style="text-decoration:none;outline:none;"><font color="#494e41" face="Arial,sans-serif" style="font-size:10pt;text-decoration:none;outline:none;">%%MobileNumber%%</font>&nbsp;</a>
                         </td>
                     </tr>
                     <tr>
                         <td class="email">
-                            <span class="type" style="font-family:Arial,sans-serif;font-size:10pt;color:#494e41">Email:&nbsp;</span>
-                            <a href="mailto:%%Email%%" class="value" style="text-decoration:none;outline:none"><font color="#494e41" face="Arial,sans-serif" style="font-size:10pt;">%%Email%%</font>&nbsp;</a>
+                            <span class="type" style="font-family:Arial,sans-serif;font-size:10pt;color:#494e41;">Email:&nbsp;</span>
+                            <a href="mailto:%%Email%%" class="value" style="text-decoration:none;outline:none"><font color="#494e41" face="Arial,sans-serif" style="font-size:10pt;text-decoration:none;outline:none;">%%Email%%</font>&nbsp;</a>
                             <div style="height:10px;display:block">&nbsp;</div>
                         </td>
                     </tr>

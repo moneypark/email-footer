@@ -1,49 +1,6 @@
 {% load static from staticfiles %}
 {% load i18n %}
 
-
-{#<h2 style="font-family:Arial,sans-serif;color:#494e41;text-align:center;font-size:18px;padding:0 0 40px 0;">Internal common footer template</h2>#}
-{#<!--Internal Template-->#}
-{#<!DOCTYPE html>#}
-{#{% spaceless %}#}
-{#<html>#}
-{#<head>#}
-{#    <meta name="viewport" content="width=device-width, initial-scale=1.0">#}
-{#    <link rel="profile" href="http://microformats.org/profile/hcard">#}
-{#    <style>a{text-decoration:none;}</style>#}
-{#</head>#}
-{#<body>#}
-{#  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="vcard">#}
-{#      <tbody>#}
-{#          <tr><td><img width="1" height="1" src="{% static 'i/blank.gif' %}" border="0" nosend="1" alt=""></td></tr>#}
-{#          <tr><td style="height:10px;display:block">&nbsp;</td></tr>#}
-{#          <tr>#}
-{#              <td style="font-family:Arial,sans-serif;font-size:10pt;color:#494e41;text-decoration:none;">#}
-{#                  <span class="given-name">%%FirstName%%&nbsp;</span>#}
-{#                  <span class="family-name">%%LastName%%</span>#}
-{#              </td>#}
-{#          </tr>#}
-{#          <tr>#}
-{#              <td>#}
-{#                  <span class="title" style="font-family:Arial,sans-serif;font-size:10pt;color:#494e41;text-decoration:none;">%%Title%%</span>#}
-{#              </td>#}
-{#          </tr>#}
-{#          <tr>#}
-{#              <td class="tel">#}
-{#                  <a href="tel:%%PhoneNumber%%" class="value" style="text-decoration:none;outline:none;">#}
-{#                      <font color="#494e41" face="Arial,sans-serif" style="font-size:10pt;text-decoration:none;outline:none;">%%PhoneNumber%%</font>#}
-{#                  </a>#}
-{#              </td>#}
-{#          </tr>#}
-{#          <tr><td style="height:10px;display:block">&nbsp;</td></tr>#}
-{#      </tbody>#}
-{#  </table>#}
-{#</body>#}
-{#</html>#}
-{#{% endspaceless %}#}
-<!--end Interanl Template-->
-
-{#<h2 style="font-family:Arial,sans-serif;color:#494e41;text-align:center;font-size:18px;padding:0 0 40px 0;">English version for footer email template</h2>#}
 <!--En Template-->
 <!DOCTYPE html>
 {% spaceless %}
@@ -109,12 +66,11 @@
                             <span class="locality">%%City%%</span>
                         </td>
                     </tr>
-                    <tr><td><span class="country-name" style="font-family:Arial,sans-serif;font-size:10pt;color:#494e41">Switzerland</span>&nbsp;</td></tr>
                     <tr><td style="height:20px;display:block">&nbsp;</td></tr>
                     <tr>
                         <td>
                             <a href="https://moneypark.ch/en/" target="_blank" style="font-family:Arial,sans-serif;font-size:20px;color:#789e56;display:block;line-height:52px;padding-right:5px;">
-                                <img src="{{ STATIC_URL }}i/len.jpg" style="background:transparent;text-align:center;" width="200" border="0" nosend="1" alt="www.moneypark.ch">
+                                <img src="{{ STATIC_URL }}i/len.png" style="background:transparent;text-align:center;" width="221" height="58" border="0" nosend="1" alt="www.moneypark.ch">
                             </a>
                         </td>
                     </tr>
@@ -229,15 +185,14 @@
                     <tr>
                       <td style="font-family:Arial,sans-serif;font-size:10pt;color:#494e41">
                           <span class="postal-code">%%ZipCode%%&nbsp;</span>
-                          <span class="locality">%%City%%</span>&nbsp;
+                          <span class="locality">%%City%%</span>
                       </td>
                     </tr>
-                    <tr><td><span class="country-name" style="font-family:Arial,sans-serif;font-size:10pt;color:#494e41">Switzerland</span>&nbsp;</td></tr>
                     <tr><td style="height:20px;display:block">&nbsp;</td></tr>
                     <tr>
                         <td>
                             <a href="https://moneypark.ch/en/" target="_blank" style="font-family:Arial,sans-serif;font-size:20px;color:#789e56;display:block;line-height:52px;padding-right:5px;">
-                                <img src="{{ STATIC_URL }}i/lde.jpg" style="background:transparent;text-align:center;" width="200" alt="www.moneypark.ch" nosend="1">
+                                <img src="{{ STATIC_URL }}i/lde.png" style="background:transparent;text-align:center;" width="221" height="59" alt="www.moneypark.ch" nosend="1">
                             </a>
                         </td>
                     </tr>
@@ -316,7 +271,7 @@
             <tr>
                 <td style="font-family:Arial,sans-serif;font-size:10pt;color:#494e41;">
                     <span class="given-name">%%FirstName%%&nbsp;</span>
-                    <span class="family-name">%%LastName%%</span>&nbsp;
+                    <span class="family-name">%%LastName%%</span>
                 </td>
             </tr>
             <tr><td><span class="title" style="font-family:Arial,sans-serif;font-size:10pt;color:#494e41;">%%Title%%</span>&nbsp;</td></tr>
@@ -354,12 +309,11 @@
                           <span class="postal-code">%%ZipCode%%&nbsp;</span><span class="locality">%%City%%</span>
                       </td>
                     </tr>
-                    <tr><td><span class="country-name" style="font-family:Arial,sans-serif;font-size:10pt;color:#494e41">Switzerland</span>&nbsp;</td></tr>
                     <tr><td style="height:20px;display:block">&nbsp;</td></tr>
                     <tr>
                         <td>
                             <a href="https://moneypark.ch/fr/" target="_blank" style="font-family:Arial,sans-serif;font-size:20px;color:#789e56;display:block;line-height:52px;padding-right:5px;">
-                                <img src="{{ STATIC_URL }}i/lfr.jpg" style="background:transparent;text-align:center;" width="200" border="0" nosend="1" alt="www.moneypark.ch">
+                                <img src="{{ STATIC_URL }}i/lfr.png" style="background:transparent;text-align:center;" width="221" height="58" border="0" nosend="1" alt="www.moneypark.ch">
                             </a>
                         </td>
                     </tr>
@@ -481,14 +435,11 @@
                           <span class="postal-code">%%ZipCode%%&nbsp;</span><span class="locality">%%City%%&nbsp;</span>
                       </td>
                     </tr>
-                    <tr>
-                      <td><span class="country-name" style="font-family:Arial,sans-serif;font-size:10pt;color:#494e41">Switzerland</span>&nbsp;</td>
-                    </tr>
                     <tr><td style="height:20px;display:block">&nbsp;</td></tr>
                     <tr>
                       <td>
                           <a href="https://moneypark.ch/it/" target="_blank" style="font-family:Arial,sans-serif;font-size:20px;color:#789e56;display:block;line-height:52px;padding-right:5px;">
-                              <img src="{{ STATIC_URL }}i/lit.jpg" style="background:transparent;text-align:center;" width="200" border="0" nosend="1" alt="www.moneypark.ch">
+                              <img src="{{ STATIC_URL }}i/lit.png" style="background:transparent;text-align:center;" width="221" height="59" border="0" nosend="1" alt="www.moneypark.ch">
                           </a>
                     </tr>
                   </table>

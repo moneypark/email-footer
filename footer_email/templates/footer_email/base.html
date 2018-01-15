@@ -7,25 +7,12 @@
 
 <h3 style="font-family: Helvetica,Arial,sans-serif; color:#494e41; text-align:center; font-size:18px; padding:40px 0 40px 0;">German version of footer email template</h3>
 {% spaceless %}
-    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <!DOCTYPE html>
     <html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="profile" href="http://microformats.org/profile/hcard">
-        <style>
-            a {  text-decoration: none;  }
-            @media (max-width: 640px) {
-                .row {
-                    display: block;
-                    width: 100%;
-                }
-                .second-table {
-                    width: 100%;
-                    margin: 10px 0 0 0;
-                }
-            }
-        </style>
     </head>
     <body>
     <table width="100%" border="0" cellspacing="0" cellpadding="0" class="vcard">
@@ -39,20 +26,22 @@
                             <table border="0" cellspacing="0" cellpadding="0">
                                 <tbody>
                                     <tr>
-                                        <td><img src="https://meeting.beta.moneypark.ch/media/cache/06/e7/06e76676cdbe6d359e95a2bb1611ec5f.jpg" alt="((FirstName))&nbsp;((LastName))" width="100" height="100" style="border-radius:100px; overflow: hidden; border:0;"></td>
-                                        <td width="20"><img width="20" height="1" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td>
+                                        <td>
+                                            <img src="https://api.moneypark.ch/api/v2/profiles/pictures/((Email))/image.jpg?size=75x75" alt="((FirstName))&nbsp;((LastName))" width="75" height="75" style="border-radius:75px; overflow: hidden; border:0; display:inline-block; vertical-align:middle;">
+                                        </td>
+                                        <td width="15"><img width="15" height="1" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td>
                                         <td>
                                             <table border="0" cellspacing="0" cellpadding="0">
                                                 <tr>
                                                     <td>
-                                                        <span class="given-name" style="font-family:Helvetica,Arial,sans-serif;font-size:12pt;color:#494e41;">((FirstName))&nbsp;</span>
-                                                        <span class="family-name" style="font-family:Helvetica,Arial,sans-serif;font-size:12pt;color:#494e41;">((LastName))</span>
+                                                        <span class="given-name" style="font-family:Helvetica,Arial,sans-serif;font-size:11pt;color:#494e41;">((FirstName))&nbsp;</span>
+                                                        <span class="family-name" style="font-family:Helvetica,Arial,sans-serif;font-size:11pt;color:#494e41;">((LastName))</span>
                                                     </td>
                                                 </tr>
                                                 <tr><td><img width="1" height="5" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
                                                 <tr>
                                                     <td>
-                                                        <span class="title" style="font-family:Helvetica,Arial,sans-serif;font-size:12pt;color:#494e41;">((JobTitle))</span>&nbsp;
+                                                        <span class="title" style="font-family:Helvetica,Arial,sans-serif;font-size:11pt;color:#494e41;">((JobTitle))</span>&nbsp;
                                                     </td>
                                                 </tr>
                                             </table>
@@ -70,33 +59,33 @@
                         <tr><td><img width="1" height="20" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
                         <tr>
                             <td class="tel">
-                                <span class="type" style="font-family:Helvetica,Arial,sans-serif;font-size:12pt;color:#494e41;">Direkt:&nbsp;</span>
-                                <a class="value" href="tel:((Phone))" style="text-decoration:none;outline:none;color:#494e41;font-size:12pt;font-family:Arial,sans-serif;">((Phone))</a>
+                                <span class="type" style="font-family:Helvetica,Arial,sans-serif;font-size:11pt;color:#494e41;">Direkt:&nbsp;</span>
+                                <a class="value" href="tel:((Phone))" style="text-decoration:none;outline:none;color:#494e41;font-size:11pt;font-family:Arial,sans-serif;">((Phone))</a>
                             </td>
                         </tr>
                         <tr><td><img width="1" height="5" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
                         <tr>
                             <td class="tel">
-                                <span class="type" style="font-family:Helvetica,Arial,sans-serif; font-size:12pt; color:#494e41">Telefon:&nbsp;</span>
-                                <a class="value" href="tel:((Mobile))" style="text-decoration:none; outline:none; color:#494e41; font-size:12pt; font-family:Helvetica,Arial,sans-serif;">((Mobile))</a>
+                                <span class="type" style="font-family:Helvetica,Arial,sans-serif; font-size:11pt; color:#494e41">Telefon:&nbsp;</span>
+                                <a class="value" href="tel:((Mobile))" style="text-decoration:none; outline:none; color:#494e41; font-size:11pt; font-family:Helvetica,Arial,sans-serif;">((Mobile))</a>
                             </td>
                         </tr>
                         <tr><td><img width="1" height="5" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
                         <tr>
                             <td class="email">
-                                <span class="type" style="font-family:Helvetica,Arial,sans-serif;font-size:12pt;color:#494e41">Email:&nbsp;</span>
-                                <a class="value" href="mailto:((Email))" style="text-decoration:none;outline:none;color:#494e41;font-size:12pt;font-family:Arial,sans-serif;">((Email))</a>
+                                <span class="type" style="font-family:Helvetica,Arial,sans-serif;font-size:11pt;color:#494e41">Email:&nbsp;</span>
+                                <a class="value" href="mailto:((Email))" style="text-decoration:none;outline:none;color:#494e41;font-size:11pt;font-family:Arial,sans-serif;">((Email))</a>
                             </td>
                         </tr>
                         <tr><td><img width="1" height="20" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
-                        <tr><td><span class="org" style="font-family:Helvetica,Arial,sans-serif;font-size:12pt;color:#494e41">MoneyPark AG</span></td></tr>
+                        <tr><td><span class="org" style="font-family:Helvetica,Arial,sans-serif;font-size:11pt;color:#494e41">MoneyPark AG</span></td></tr>
                         <tr><td><img width="1" height="5" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
-                        <tr><td><span class="street-address" style="font-family:Helvetica,Arial,sans-serif;font-size:12pt;color:#494e41">((Street))</span></td></tr>
+                        <tr><td><span class="street-address" style="font-family:Helvetica,Arial,sans-serif;font-size:11pt;color:#494e41">((Street))</span></td></tr>
                         <tr><td><img width="1" height="5" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
                         <tr>
                             <td>
-                                <span class="postal-code" style="font-family:Arial,sans-serif;font-size:12pt;color:#494e41">((ZIP))&nbsp;</span>
-                                <span class="locality" style="font-family:Arial,sans-serif;font-size:12pt;color:#494e41">((City))</span>
+                                <span class="postal-code" style="font-family:Arial,sans-serif;font-size:11pt;color:#494e41">((ZIP))&nbsp;</span>
+                                <span class="locality" style="font-family:Arial,sans-serif;font-size:11pt;color:#494e41">((City))</span>
                             </td>
                         </tr>
                         <tr><td><img width="1" height="20" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
@@ -109,9 +98,9 @@
                             <td>
                                 <table cellspacing="0" cellpadding="0">
                                     <tr>
-                                        <td><img src="https://beta.moneypark.ch/static/assets/dist/pngFromSvg/recommendation.png" width="44" height="44" alt="MoneyPark weiterempfehlen"></td>
+                                        <td><img src="https://moneypark.ch/static/assets/dist/pngFromSvg/recommendation.png" width="44" height="44" alt="MoneyPark weiterempfehlen"></td>
                                         <td><img width="6" height="1" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td>
-                                        <td><span style="font-family:Helvetica,Arial,sans-serif; font-size:14pt; color:#789e56; font-weight:400;">MoneyPark weiterempfehlen</span></td>
+                                        <td><span style="font-family:Helvetica,Arial,sans-serif; font-size:13pt; color:#789e56; font-weight:400;">MoneyPark weiterempfehlen</span></td>
                                     </tr>
                                 </table>
                             </td>
@@ -121,7 +110,7 @@
                             <td>
                                 <span style="font-family: Helvetica,Arial,sans-serif; font-size:12pt; color:#494e41">
                                     und einen Gutschein im Wert von
-                                    <span style="font-family: Helvetica,Arial,sans-serif; color:#789e56; font-weight:400;">CHF</span>&nbsp;<span style="font-family:Helvetica,Arial,sans-serif; font-size:16pt; color:#789e56; font-weight:400;">200</span>
+                                    <span style="font-family: Helvetica,Arial,sans-serif; color:#789e56; font-weight:400;">CHF</span>&nbsp;<span style="font-family:Helvetica,Arial,sans-serif; font-size:18pt; color:#789e56; font-weight:400;">200</span>
                                     erhalten
                                 </span>
                             </td>
@@ -129,16 +118,18 @@
                         <tr><td><img width="1" height="10" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
                         <tr>
                             <td>
-                                <a class="value" href="https://moneypark.ch/moneypark-weiterempfehlen/?utm_source=signature&utm_medium=email&utm_campaign=learn_more_signature_recommendation" style="text-decoration:underline; outline:none; color:#4995e3; font-size:12pt; font-family:Helvetica,Arial,sans-serif;">
-                                    <span style="text-decoration:underline; outline:none; color:#4995e3; font-size:12pt; font-family:Helvetica,Arial,sans-serif; display:inline-block; vertical-align: middle;">Mehr erfahren</span>
+                                <a href="https://moneypark.ch/moneypark-weiterempfehlen/?utm_source=signature&utm_medium=email&utm_campaign=learn_more_signature_recommendation" style="display:inline-block; vertical-align: middle; text-decoration:underline; outline:none; color:#4995e3; font-size:12pt; font-family:Helvetica,Arial,sans-serif;">
+                                    <span style="text-decoration:underline; outline:none; color:#4995e3; font-size:11pt; font-family:Helvetica,Arial,sans-serif; display:inline-block; vertical-align: middle;">Mehr erfahren</span>
                                     <img src="https://moneypark.ch/static/assets/dist/pngFromSvg/arrow.png" width="22" height="22" alt="" style="display:inline-block; vertical-align: middle; margin-left:5px;">
                                 </a>
                             </td>
                         </tr>
-                        <tr><td><img width="1" height="40" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
+                        <tr><td><img width="1" height="30" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
                         <tr>
-                            <td><a href="https://moneypark.ch/moneypark-weiterempfehlen/?utm_source=signature&utm_medium=email&utm_campaign=learn_more_signature_recommendation" target="_blank" style="font-family:Arial,sans-serif;font-size:20px;color:#789e56;display:block;line-height:52px;padding-right:5px;">
-                                <img src="https://moneypark.ch/static/i/registration-email/reg-mail-logo@2x.png" style="background:transparent;text-align:center;" width="215" height="57" alt="www.moneypark.ch" nosend="1"></a>
+                            <td>
+                                <a href="https://moneypark.ch/moneypark-weiterempfehlen/?utm_source=signature&utm_medium=email&utm_campaign=learn_more_signature_recommendation" target="_blank" style="font-family:Arial,sans-serif; font-size:20px; color:#789e56; display:block; line-height:30px;">
+                                    <img src="https://moneypark.ch/static/assets/dist/pngFromSvg/logo/logo-moneypark-mortgage-de.png" width="120" height="30" style="background:transparent; text-align:center;" alt="www.moneypark.ch" nosend="1">
+                                </a>
                             </td>
                         </tr>
                         <tr><td><img width="1" height="20" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
@@ -153,25 +144,12 @@
 
 <h3 style="font-family: Helvetica,Arial,sans-serif; color:#494e41; text-align:center; font-size:18px; padding:40px 0 40px 0;">English version of footer email template</h3>
 {% spaceless %}
-    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <!DOCTYPE html>
     <html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="profile" href="http://microformats.org/profile/hcard">
-        <style>
-            a {  text-decoration: none;  }
-            @media (max-width: 640px) {
-                .row {
-                    display: block;
-                    width: 100%;
-                }
-                .second-table {
-                    width: 100%;
-                    margin: 10px 0 0 0;
-                }
-            }
-        </style>
     </head>
     <body>
     <table width="100%" border="0" cellspacing="0" cellpadding="0" class="vcard">
@@ -185,8 +163,8 @@
                             <table border="0" cellspacing="0" cellpadding="0">
                                 <tbody>
                                     <tr>
-                                        <td><img src="https://meeting.beta.moneypark.ch/media/cache/06/e7/06e76676cdbe6d359e95a2bb1611ec5f.jpg" alt="((FirstName))&nbsp;((LastName))" width="100" height="100" style="border-radius:100px; overflow: hidden; border:0;"></td>
-                                        <td width="20"><img width="20" height="1" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td>
+                                        <td><img src="https://api.moneypark.ch/api/v2/profiles/pictures/((Email))/image.jpg?size=75x75" alt="((FirstName))&nbsp;((LastName))" width="75" height="75" style="display:inline-block; vertical-align: middle; border-radius: 75px; overflow: hidden; border:0;"></td>
+                                        <td width="15"><img width="15" height="1" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td>
                                         <td>
                                             <table border="0" cellspacing="0" cellpadding="0">
                                                 <tr>
@@ -196,13 +174,8 @@
                                                     </td>
                                                 </tr>
                                                 <tr><td><img width="1" height="5" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
-                                                <tr>
-                                                    <td>
-                                                        <span class="title" style="font-family:Helvetica,Arial,sans-serif;font-size:12pt;color:#494e41;">((JobTitle))</span>&nbsp;
-                                                    </td>
-                                                </tr>
+                                                <tr><td><span class="title" style="font-family:Helvetica,Arial,sans-serif;font-size:11pt;color:#494e41;">((JobTitle))</span>&nbsp;</td></tr>
                                             </table>
-
                                         </td>
                                     </tr>
                                 </tbody>
@@ -216,33 +189,33 @@
                         <tr><td><img width="1" height="20" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
                         <tr>
                             <td class="tel">
-                                <span class="type" style="font-family:Helvetica,Arial,sans-serif;font-size:12pt;color:#494e41;">Direct:&nbsp;</span>
-                                <a class="value" href="tel:((Phone))" style="text-decoration:none;outline:none;color:#494e41;font-size:12pt;font-family:Arial,sans-serif;">((Phone))</a>
+                                <span class="type" style="font-family:Helvetica,Arial,sans-serif; font-size:11pt;color:#494e41;">Direct:&nbsp;</span>
+                                <a class="value" href="tel:((Phone))" style="text-decoration:none;outline:none;color:#494e41; font-size:11pt;font-family:Arial,sans-serif;">((Phone))</a>
                             </td>
                         </tr>
                         <tr><td><img width="1" height="5" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
                         <tr>
                             <td class="tel">
-                                <span class="type" style="font-family:Helvetica,Arial,sans-serif; font-size:12pt; color:#494e41">Company:&nbsp;</span>
-                                <a class="value" href="tel:((Mobile))" style="text-decoration:none; outline:none; color:#494e41; font-size:12pt; font-family:Helvetica,Arial,sans-serif;">((Mobile))</a>
+                                <span class="type" style="font-family:Helvetica,Arial,sans-serif; font-size:11pt; color:#494e41">Company:&nbsp;</span>
+                                <a class="value" href="tel:((Mobile))" style="text-decoration:none; outline:none; color:#494e41; font-size:11pt; font-family:Helvetica,Arial,sans-serif;">((Mobile))</a>
                             </td>
                         </tr>
                         <tr><td><img width="1" height="5" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
                         <tr>
                             <td class="email">
-                                <span class="type" style="font-family:Helvetica,Arial,sans-serif;font-size:12pt;color:#494e41">Email:&nbsp;</span>
+                                <span class="type" style="font-family:Helvetica,Arial,sans-serif; font-size:11pt;color:#494e41">Email:&nbsp;</span>
                                 <a class="value" href="mailto:((Email))" style="text-decoration:none;outline:none;color:#494e41;font-size:12pt;font-family:Arial,sans-serif;">((Email))</a>
                             </td>
                         </tr>
                         <tr><td><img width="1" height="20" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
-                        <tr><td><span class="org" style="font-family:Helvetica,Arial,sans-serif;font-size:12pt;color:#494e41">MoneyPark AG</span></td></tr>
+                        <tr><td><span class="org" style="font-family:Helvetica,Arial,sans-serif;font-size:11pt;color:#494e41">MoneyPark AG</span></td></tr>
                         <tr><td><img width="1" height="5" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
-                        <tr><td><span class="street-address" style="font-family:Helvetica,Arial,sans-serif;font-size:12pt;color:#494e41">((Street))</span></td></tr>
+                        <tr><td><span class="street-address" style="font-family:Helvetica,Arial,sans-serif;font-size:11pt;color:#494e41">((Street))</span></td></tr>
                         <tr><td><img width="1" height="5" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
                         <tr>
                             <td>
-                                <span class="postal-code" style="font-family:Arial,sans-serif;font-size:12pt;color:#494e41">((ZIP))&nbsp;</span>
-                                <span class="locality" style="font-family:Arial,sans-serif;font-size:12pt;color:#494e41">((City))</span>
+                                <span class="postal-code" style="font-family:Arial,sans-serif; font-size:11pt;color:#494e41">((ZIP))&nbsp;</span>
+                                <span class="locality" style="font-family:Arial,sans-serif; font-size:11pt;color:#494e41">((City))</span>
                             </td>
                         </tr>
                         <tr><td><img width="1" height="20" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
@@ -255,9 +228,9 @@
                             <td>
                                 <table cellspacing="0" cellpadding="0">
                                     <tr>
-                                        <td><img src="https://beta.moneypark.ch/static/assets/dist/pngFromSvg/recommendation.png" width="44" height="44" alt="Recommend MoneyPark"></td>
+                                        <td><img src="https://moneypark.ch/static/assets/dist/pngFromSvg/recommendation.png" width="44" height="44" alt="Recommend MoneyPark"></td>
                                         <td><img width="6" height="1" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td>
-                                        <td><span style="font-family:Helvetica,Arial,sans-serif; font-size:14pt; color:#789e56; font-weight:400;">Recommend MoneyPark</span></td>
+                                        <td><span style="font-family:Helvetica,Arial,sans-serif; font-size:13pt; color:#789e56; font-weight:400;">Recommend MoneyPark</span></td>
                                     </tr>
                                 </table>
                             </td>
@@ -267,23 +240,25 @@
                             <td>
                                 <span style="font-family: Helvetica,Arial,sans-serif; font-size:12pt; color:#494e41">
                                     and a recieve a voucher worth
-                                    <span style="font-family: Helvetica,Arial,sans-serif; color:#789e56; font-weight:400;">CHF</span>&nbsp;<span style="font-family:Helvetica,Arial,sans-serif; font-size:16pt; color:#789e56; font-weight:400;">200</span>
+                                    <span style="font-family: Helvetica,Arial,sans-serif; color:#789e56; font-weight:400;">CHF</span>&nbsp;<span style="font-family:Helvetica,Arial,sans-serif; font-size:18pt; color:#789e56; font-weight:400;">200</span>
                                 </span>
                             </td>
                         </tr>
                         <tr><td><img width="1" height="10" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
                         <tr>
                             <td>
-                                <a class="value" href="https://moneypark.ch/en/recommend-moneypark/?utm_source=signature&utm_medium=email&utm_campaign=learn_more_signature_recommendation" style="text-decoration:underline; outline:none; color:#4995e3; font-size:12pt; font-family:Helvetica,Arial,sans-serif;">
-                                    <span style="text-decoration:underline; outline:none; color:#4995e3; font-size:12pt; font-family:Helvetica,Arial,sans-serif; display:inline-block; vertical-align: middle;">Learn more</span>
-                                    <img src="https://moneypark.ch/static/assets/dist/pngFromSvg/arrow.png" width="22" height="22" alt="" style="display:inline-block; vertical-align: middle; margin-left:5px;">
+                                <a href="https://moneypark.ch/en/recommend-moneypark/?utm_source=signature&utm_medium=email&utm_campaign=learn_more_signature_recommendation" style="display:inline-block; vertical-align: middle; text-decoration:underline; outline:none; color:#4995e3; font-size:12pt; font-family:Helvetica,Arial,sans-serif;">
+                                    <span style="text-decoration:underline; outline:none; color:#4995e3; font-size:11pt; font-family:Helvetica,Arial,sans-serif; display:inline-block; vertical-align: middle;">Learn more</span>
+                                    <img src="https://moneypark.ch/static/assets/dist/pngFromSvg/arrow.png" width="22" height="22" alt="recommend-moneypark" style="display:inline-block; vertical-align: middle; margin-left:5px;">
                                 </a>
                             </td>
                         </tr>
-                        <tr><td><img width="1" height="40" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
+                        <tr><td><img width="1" height="30" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
                         <tr>
-                            <td><a href="https://moneypark.ch/en/?utm_source=signature&utm_medium=email&utm_campaign=moneypark_signature_recommendation" target="_blank" style="font-family:Arial,sans-serif;font-size:20px;color:#789e56;display:block;line-height:52px;padding-right:5px;">
-                                <img src="{{ STATIC_URL }}i/len.png" style="background:transparent;text-align:center;" width="221" height="59" alt="www.moneypark.ch" nosend="1"></a>
+                            <td>
+                                <a href="https://moneypark.ch/en/?utm_source=signature&utm_medium=email&utm_campaign=moneypark_signature_recommendation" target="_blank" style="font-family:Arial,sans-serif;font-size:20px;color:#789e56; display: inline-block; vertical-align: top; line-height: 30px;">
+                                    <img src="https://moneypark.ch/static/assets/dist/pngFromSvg/logo/logo-moneypark-mortgage-en.png" style="background:transparent; text-align:center;" width="120" height="30" alt="www.moneypark.ch/en/" nosend="1">
+                                </a>
                             </td>
                         </tr>
                         <tr><td><img width="1" height="20" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
@@ -299,25 +274,12 @@
 
 <h3 style="font-family: Helvetica,Arial,sans-serif; color:#494e41; text-align:center; font-size:18px; padding:40px 0 40px 0;">French version of footer email template</h3>
 {% spaceless %}
-    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <!DOCTYPE html>
     <html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="profile" href="http://microformats.org/profile/hcard">
-        <style>
-            a {  text-decoration: none;  }
-            @media (max-width: 640px) {
-                .row {
-                    display: block;
-                    width: 100%;
-                }
-                .second-table {
-                    width: 100%;
-                    margin: 10px 0 0 0;
-                }
-            }
-        </style>
     </head>
     <body>
     <table width="100%" border="0" cellspacing="0" cellpadding="0" class="vcard">
@@ -331,20 +293,20 @@
                             <table border="0" cellspacing="0" cellpadding="0">
                                 <tbody>
                                     <tr>
-                                        <td><img src="https://meeting.beta.moneypark.ch/media/cache/06/e7/06e76676cdbe6d359e95a2bb1611ec5f.jpg" alt="((FirstName))&nbsp;((LastName))" width="100" height="100" style="border-radius:100px; overflow: hidden; border:0;"></td>
-                                        <td width="20"><img width="20" height="1" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td>
+                                        <td><img src="https://api.moneypark.ch/api/v2/profiles/pictures/((Email))/image.jpg?size=75x75" alt="((FirstName))&nbsp;((LastName))" width="75" height="75" style="display:inline-block; vertical-align: middle; border-radius:75px; overflow: hidden; border:0;"></td>
+                                        <td width="15"><img width="15" height="1" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td>
                                         <td>
                                             <table border="0" cellspacing="0" cellpadding="0">
                                                 <tr>
                                                     <td>
-                                                        <span class="given-name" style="font-family:Helvetica,Arial,sans-serif;font-size:12pt;color:#494e41;">((FirstName))&nbsp;</span>
-                                                        <span class="family-name" style="font-family:Helvetica,Arial,sans-serif;font-size:12pt;color:#494e41;">((LastName))</span>
+                                                        <span class="given-name" style="font-family:Helvetica,Arial,sans-serif; font-size:11pt; color:#494e41;">((FirstName))&nbsp;</span>
+                                                        <span class="family-name" style="font-family:Helvetica,Arial,sans-serif; font-size:11pt; color:#494e41;">((LastName))</span>
                                                     </td>
                                                 </tr>
                                                 <tr><td><img width="1" height="5" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
                                                 <tr>
                                                     <td>
-                                                        <span class="title" style="font-family:Helvetica,Arial,sans-serif;font-size:12pt;color:#494e41;">((JobTitle))</span>&nbsp;
+                                                        <span class="title" style="font-family:Helvetica,Arial,sans-serif; font-size:11pt; color:#494e41;">((JobTitle))</span>&nbsp;
                                                     </td>
                                                 </tr>
                                             </table>
@@ -362,33 +324,33 @@
                         <tr><td><img width="1" height="20" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
                         <tr>
                             <td class="tel">
-                                <span class="type" style="font-family:Helvetica,Arial,sans-serif;font-size:12pt;color:#494e41;">Ligne directe:&nbsp;</span>
-                                <a class="value" href="tel:((Phone))" style="text-decoration:none;outline:none;color:#494e41;font-size:12pt;font-family:Arial,sans-serif;">((Phone))</a>
+                                <span class="type" style="font-family:Helvetica,Arial,sans-serif;font-size:11pt;color:#494e41;">Ligne directe:&nbsp;</span>
+                                <a class="value" href="tel:((Phone))" style="text-decoration:none;outline:none;color:#494e41;font-size:11pt;font-family:Arial,sans-serif;">((Phone))</a>
                             </td>
                         </tr>
                         <tr><td><img width="1" height="5" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
                         <tr>
                             <td class="tel">
-                                <span class="type" style="font-family:Helvetica,Arial,sans-serif; font-size:12pt; color:#494e41">Téléphone:&nbsp;</span>
-                                <a class="value" href="tel:((Mobile))" style="text-decoration:none; outline:none; color:#494e41; font-size:12pt; font-family:Helvetica,Arial,sans-serif;">((Mobile))</a>
+                                <span class="type" style="font-family:Helvetica,Arial,sans-serif; font-size:11pt; color:#494e41">Téléphone:&nbsp;</span>
+                                <a class="value" href="tel:((Mobile))" style="text-decoration:none; outline:none; color:#494e41; font-size:11pt; font-family:Helvetica,Arial,sans-serif;">((Mobile))</a>
                             </td>
                         </tr>
                         <tr><td><img width="1" height="5" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
                         <tr>
                             <td class="email">
-                                <span class="type" style="font-family:Helvetica,Arial,sans-serif;font-size:12pt;color:#494e41">Email:&nbsp;</span>
-                                <a class="value" href="mailto:((Email))" style="text-decoration:none;outline:none;color:#494e41;font-size:12pt;font-family:Arial,sans-serif;">((Email))</a>
+                                <span class="type" style="font-family:Helvetica,Arial,sans-serif;font-size:11pt;color:#494e41">Email:&nbsp;</span>
+                                <a class="value" href="mailto:((Email))" style="text-decoration:none;outline:none;color:#494e41;font-size:11pt;font-family:Arial,sans-serif;">((Email))</a>
                             </td>
                         </tr>
                         <tr><td><img width="1" height="20" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
-                        <tr><td><span class="org" style="font-family:Helvetica,Arial,sans-serif;font-size:12pt;color:#494e41">MoneyPark AG</span></td></tr>
+                        <tr><td><span class="org" style="font-family:Helvetica,Arial,sans-serif;font-size:11pt;color:#494e41">MoneyPark AG</span></td></tr>
                         <tr><td><img width="1" height="5" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
-                        <tr><td><span class="street-address" style="font-family:Helvetica,Arial,sans-serif;font-size:12pt;color:#494e41">((Street))</span></td></tr>
+                        <tr><td><span class="street-address" style="font-family:Helvetica,Arial,sans-serif; font-size:11pt;color:#494e41">((Street))</span></td></tr>
                         <tr><td><img width="1" height="5" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
                         <tr>
                             <td>
-                                <span class="postal-code" style="font-family:Arial,sans-serif;font-size:12pt;color:#494e41">((ZIP))&nbsp;</span>
-                                <span class="locality" style="font-family:Arial,sans-serif;font-size:12pt;color:#494e41">((City))</span>
+                                <span class="postal-code" style="font-family:Arial,sans-serif; font-size:11pt;color:#494e41">((ZIP))&nbsp;</span>
+                                <span class="locality" style="font-family:Arial,sans-serif; font-size:11pt; color:#494e41">((City))</span>
                             </td>
                         </tr>
                         <tr><td><img width="1" height="20" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
@@ -401,9 +363,9 @@
                             <td>
                                 <table cellspacing="0" cellpadding="0">
                                     <tr>
-                                        <td><img src="https://beta.moneypark.ch/static/assets/dist/pngFromSvg/recommendation.png" width="44" height="44" alt="Recommandez MoneyPark !"></td>
+                                        <td><img src="https://moneypark.ch/static/assets/dist/pngFromSvg/recommendation.png" width="44" height="44" alt="Recommandez MoneyPark !"></td>
                                         <td><img width="6" height="1" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td>
-                                        <td><span style="font-family:Helvetica,Arial,sans-serif; font-size:14pt; color:#789e56; font-weight:400;">Recommandez MoneyPark !</span></td>
+                                        <td><span style="font-family:Helvetica,Arial,sans-serif; font-size:13pt; color:#789e56; font-weight:400;">Recommandez MoneyPark !</span></td>
                                     </tr>
                                 </table>
                             </td>
@@ -413,23 +375,25 @@
                             <td>
                                 <span style="font-family: Helvetica,Arial,sans-serif; font-size:12pt; color:#494e41">
                                     Pour chaque recommandation ayant abouti à un contrat vous obtenez un bon d'une valeur de
-                                    <span style="font-family: Helvetica,Arial,sans-serif; color:#789e56; font-weight:400;">CHF</span>&nbsp;<span style="font-family:Helvetica,Arial,sans-serif; font-size:16pt; color:#789e56; font-weight:400;">200</span>
+                                    <span style="font-family: Helvetica,Arial,sans-serif; color:#789e56; font-weight:400;">CHF</span>&nbsp;<span style="font-family:Helvetica,Arial,sans-serif; font-size:18pt; color:#789e56; font-weight:400;">200</span>
                                 </span>
                             </td>
                         </tr>
                         <tr><td><img width="1" height="10" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
                         <tr>
                             <td>
-                                <a class="value" href="https://moneypark.ch/fr/recommandez-moneypark/?utm_source=signature&utm_medium=email&utm_campaign=learn_more_signature_recommendation" style="text-decoration:underline; outline:none; color:#4995e3; font-size:12pt; font-family:Helvetica,Arial,sans-serif;">
-                                    <span style="text-decoration:underline; outline:none; color:#4995e3; font-size:12pt; font-family:Helvetica,Arial,sans-serif; display:inline-block; vertical-align: middle;">En savoir plus</span>
+                                <a href="https://moneypark.ch/fr/recommandez-moneypark/?utm_source=signature&utm_medium=email&utm_campaign=learn_more_signature_recommendation" style="text-decoration:underline; outline:none; color:#4995e3; font-size:12pt; font-family:Helvetica,Arial,sans-serif;">
+                                    <span style="text-decoration:underline; outline:none; color:#4995e3; font-size:11pt; font-family:Helvetica,Arial,sans-serif; display:inline-block; vertical-align: middle;">En savoir plus</span>
                                     <img src="https://moneypark.ch/static/assets/dist/pngFromSvg/arrow.png" width="22" height="22" alt="" style="display:inline-block; vertical-align: middle; margin-left:5px;">
                                 </a>
                             </td>
                         </tr>
-                        <tr><td><img width="1" height="40" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
+                        <tr><td><img width="1" height="30" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
                         <tr>
-                            <td><a href="https://moneypark.ch/fr/recommandez-moneypark/?utm_source=signature&utm_medium=email&utm_campaign=moneypark_signature_recommendation" target="_blank" style="font-family:Arial,sans-serif;font-size:20px;color:#789e56;display:block;line-height:52px;padding-right:5px;">
-                                <img src="{{ STATIC_URL }}i/lfr.png" style="background:transparent;text-align:center;" width="221" height="59" alt="www.moneypark.ch" nosend="1"></a>
+                            <td>
+                                <a href="https://moneypark.ch/fr/recommandez-moneypark/?utm_source=signature&utm_medium=email&utm_campaign=moneypark_signature_recommendation" target="_blank" style="font-family:Arial,sans-serif;font-size:20px;color:#789e56; line-height:30px;display: inline-block;vertical-align: top;">
+                                    <img src="https://moneypark.ch/static/assets/dist/pngFromSvg/logo/logo-moneypark-mortgage-fr.png" style="background:transparent;text-align:center;" width="120" height="30" alt="www.moneypark.ch" nosend="1">
+                                </a>
                             </td>
                         </tr>
                         <tr><td><img width="1" height="20" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
@@ -444,25 +408,12 @@
 
 <h3 style="font-family: Helvetica,Arial,sans-serif; color:#494e41; text-align:center; font-size:18px; padding:40px 0 40px 0;">Italian version of footer email template</h3>
 {% spaceless %}
-    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <!DOCTYPE html>
     <html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="profile" href="http://microformats.org/profile/hcard">
-        <style>
-            a {  text-decoration: none;  }
-            @media (max-width: 640px) {
-                .row {
-                    display: block;
-                    width: 100%;
-                }
-                .second-table {
-                    width: 100%;
-                    margin: 10px 0 0 0;
-                }
-            }
-        </style>
     </head>
     <body>
     <table width="100%" border="0" cellspacing="0" cellpadding="0" class="vcard">
@@ -476,20 +427,20 @@
                             <table border="0" cellspacing="0" cellpadding="0">
                                 <tbody>
                                     <tr>
-                                        <td><img src="https://meeting.beta.moneypark.ch/media/cache/06/e7/06e76676cdbe6d359e95a2bb1611ec5f.jpg" alt="((FirstName))&nbsp;((LastName))" width="100" height="100" style="border-radius:100px; overflow: hidden; border:0;"></td>
-                                        <td width="20"><img width="20" height="1" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td>
+                                        <td><img src="https://api.moneypark.ch/api/v2/profiles/pictures/((Email))/image.jpg?size=75x75" alt="((FirstName))&nbsp;((LastName))" width="75" height="75" style="display:inline-block; vertical-align: middle; border-radius:75px; overflow: hidden; border:0;"></td>
+                                        <td width="15"><img width="15" height="1" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td>
                                         <td>
                                             <table border="0" cellspacing="0" cellpadding="0">
                                                 <tr>
                                                     <td>
-                                                        <span class="given-name" style="font-family:Helvetica,Arial,sans-serif;font-size:12pt;color:#494e41;">((FirstName))&nbsp;</span>
-                                                        <span class="family-name" style="font-family:Helvetica,Arial,sans-serif;font-size:12pt;color:#494e41;">((LastName))</span>
+                                                        <span class="given-name" style="font-family:Helvetica,Arial,sans-serif; font-size:11pt; color:#494e41;">((FirstName))&nbsp;</span>
+                                                        <span class="family-name" style="font-family:Helvetica,Arial,sans-serif; font-size:11pt; color:#494e41;">((LastName))</span>
                                                     </td>
                                                 </tr>
                                                 <tr><td><img width="1" height="5" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
                                                 <tr>
                                                     <td>
-                                                        <span class="title" style="font-family:Helvetica,Arial,sans-serif;font-size:12pt;color:#494e41;">((JobTitle))</span>&nbsp;
+                                                        <span class="title" style="font-family:Helvetica,Arial,sans-serif; font-size:11pt; color:#494e41;">((JobTitle))</span>&nbsp;
                                                     </td>
                                                 </tr>
                                             </table>
@@ -507,33 +458,33 @@
                         <tr><td><img width="1" height="20" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
                         <tr>
                             <td class="tel">
-                                <span class="type" style="font-family:Helvetica,Arial,sans-serif;font-size:12pt;color:#494e41;">Tel. Diretto:&nbsp;</span>
-                                <a class="value" href="tel:((Phone))" style="text-decoration:none;outline:none;color:#494e41;font-size:12pt;font-family:Arial,sans-serif;">((Phone))</a>
+                                <span class="type" style="font-family:Helvetica,Arial,sans-serif;font-size:11pt;color:#494e41;">Tel. Diretto:&nbsp;</span>
+                                <a class="value" href="tel:((Phone))" style="text-decoration:none;outline:none;color:#494e41; font-size:11pt; font-family:Arial,sans-serif;">((Phone))</a>
                             </td>
                         </tr>
                         <tr><td><img width="1" height="5" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
                         <tr>
                             <td class="tel">
-                                <span class="type" style="font-family:Helvetica,Arial,sans-serif; font-size:12pt; color:#494e41">Ufficio:&nbsp;</span>
-                                <a class="value" href="tel:((Mobile))" style="text-decoration:none; outline:none; color:#494e41; font-size:12pt; font-family:Helvetica,Arial,sans-serif;">((Mobile))</a>
+                                <span class="type" style="font-family:Helvetica,Arial,sans-serif; font-size:11pt; color:#494e41">Ufficio:&nbsp;</span>
+                                <a class="value" href="tel:((Mobile))" style="text-decoration:none; outline:none; color:#494e41; font-size:11pt; font-family:Helvetica,Arial,sans-serif;">((Mobile))</a>
                             </td>
                         </tr>
                         <tr><td><img width="1" height="5" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
                         <tr>
                             <td class="email">
-                                <span class="type" style="font-family:Helvetica,Arial,sans-serif;font-size:12pt;color:#494e41">Email:&nbsp;</span>
+                                <span class="type" style="font-family:Helvetica,Arial,sans-serif;font-size:11pt;color:#494e41">Email:&nbsp;</span>
                                 <a class="value" href="mailto:((Email))" style="text-decoration:none;outline:none;color:#494e41;font-size:12pt;font-family:Arial,sans-serif;">((Email))</a>
                             </td>
                         </tr>
                         <tr><td><img width="1" height="20" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
-                        <tr><td><span class="org" style="font-family:Helvetica,Arial,sans-serif;font-size:12pt;color:#494e41">MoneyPark AG</span></td></tr>
+                        <tr><td><span class="org" style="font-family:Helvetica,Arial,sans-serif;font-size:11pt;color:#494e41">MoneyPark AG</span></td></tr>
                         <tr><td><img width="1" height="5" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
-                        <tr><td><span class="street-address" style="font-family:Helvetica,Arial,sans-serif;font-size:12pt;color:#494e41">((Street))</span></td></tr>
+                        <tr><td><span class="street-address" style="font-family:Helvetica,Arial,sans-serif;font-size:11pt;color:#494e41">((Street))</span></td></tr>
                         <tr><td><img width="1" height="5" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
                         <tr>
                             <td>
-                                <span class="postal-code" style="font-family:Arial,sans-serif;font-size:12pt;color:#494e41">((ZIP))&nbsp;</span>
-                                <span class="locality" style="font-family:Arial,sans-serif;font-size:12pt;color:#494e41">((City))</span>
+                                <span class="postal-code" style="font-family:Arial,sans-serif;font-size:11pt;color:#494e41">((ZIP))&nbsp;</span>
+                                <span class="locality" style="font-family:Arial,sans-serif;font-size:11pt;color:#494e41">((City))</span>
                             </td>
                         </tr>
                         <tr><td><img width="1" height="20" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
@@ -546,9 +497,9 @@
                             <td>
                                 <table cellspacing="0" cellpadding="0">
                                     <tr>
-                                        <td><img src="https://beta.moneypark.ch/static/assets/dist/pngFromSvg/recommendation.png" width="44" height="44" alt="Raccomandare MoneyPark!"></td>
+                                        <td><img src="https://moneypark.ch/static/assets/dist/pngFromSvg/recommendation.png" width="44" height="44" alt="Raccomandare MoneyPark!"></td>
                                         <td><img width="6" height="1" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td>
-                                        <td><span style="font-family:Helvetica,Arial,sans-serif; font-size:14pt; color:#789e56; font-weight:400;">Raccomandare MoneyPark!</span></td>
+                                        <td><span style="font-family:Helvetica,Arial,sans-serif; font-size:13pt; color:#789e56; font-weight:400;">Raccomandare MoneyPark!</span></td>
                                     </tr>
                                 </table>
                             </td>
@@ -558,23 +509,23 @@
                             <td>
                                 <span style="font-family: Helvetica,Arial,sans-serif; font-size:12pt; color:#494e41">
                                     Per ogni raccomandazione andata a buon fine Lei riceverà un buono dal valore di
-                                    <span style="font-family: Helvetica,Arial,sans-serif; color:#789e56; font-weight:400;">CHF</span>&nbsp;<span style="font-family:Helvetica,Arial,sans-serif; font-size:16pt; color:#789e56; font-weight:400;">200</span>
+                                    <span style="font-family: Helvetica,Arial,sans-serif; color:#789e56; font-weight:400;">CHF</span>&nbsp;<span style="font-family:Helvetica,Arial,sans-serif; font-size:18pt; color:#789e56; font-weight:400;">200</span>
                                 </span>
                             </td>
                         </tr>
                         <tr><td><img width="1" height="10" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
                         <tr>
                             <td>
-                                <a class="value" href="https://moneypark.ch/it/raccomandare-moneypark/?utm_source=signature&utm_medium=email&utm_campaign=learn_more_signature_recommendation" style="text-decoration:underline; outline:none; color:#4995e3; font-size:12pt; font-family:Helvetica,Arial,sans-serif;">
-                                    <span style="text-decoration:underline; outline:none; color:#4995e3; font-size:12pt; font-family:Helvetica,Arial,sans-serif; display:inline-block; vertical-align: middle;">Saperne di più</span>
+                                <a href="https://moneypark.ch/it/raccomandare-moneypark/?utm_source=signature&utm_medium=email&utm_campaign=learn_more_signature_recommendation" style="display:inline-block; vertical-align: middle; text-decoration: underline; outline:none; color:#4995e3; font-size:12pt; font-family:Helvetica,Arial,sans-serif;">
+                                    <span style="text-decoration:underline; outline:none; color:#4995e3; font-size:11pt; font-family:Helvetica,Arial,sans-serif; display:inline-block; vertical-align: middle;">Saperne di più</span>
                                     <img src="https://moneypark.ch/static/assets/dist/pngFromSvg/arrow.png" width="22" height="22" alt="Saperne di più" style="display:inline-block; vertical-align: middle; margin-left:5px;">
                                 </a>
                             </td>
                         </tr>
-                        <tr><td><img width="1" height="40" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
+                        <tr><td><img width="1" height="30" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>
                         <tr>
-                            <td><a href="https://moneypark.ch/it/raccomandare-moneypark/?utm_source=signature&utm_medium=email&utm_campaign=moneypark_signature_recommendation" target="_blank" style="font-family:Arial,sans-serif;font-size:20px;color:#789e56;display:block;line-height:52px;padding-right:5px;">
-                                <img src="{{ STATIC_URL }}i/lit.png" style="background:transparent;text-align:center;" width="221" height="59" alt="www.moneypark.ch" nosend="1"></a>
+                            <td><a href="https://moneypark.ch/it/raccomandare-moneypark/?utm_source=signature&utm_medium=email&utm_campaign=moneypark_signature_recommendation" target="_blank" style="font-family:Helvetica,Arial,sans-serif;font-size:20px;color:#789e56;display:block; line-height:30px;">
+                                <img src="https://moneypark.ch/static/assets/dist/pngFromSvg/logo/logo-moneypark-mortgage-it.png" style="background:transparent;text-align:center;" width="120" height="30" alt="www.moneypark.ch/it/" nosend="1"></a>
                             </td>
                         </tr>
                         <tr><td><img width="1" height="20" src="https://moneypark.ch/footer-email/static/i/blank.gif" nosend="1" alt=""></td></tr>

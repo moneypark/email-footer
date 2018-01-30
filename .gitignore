@@ -5,3 +5,4 @@ db.sqlite3
 .idea
 static_collected
 settings_local.py
+venv
